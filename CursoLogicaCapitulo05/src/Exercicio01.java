@@ -24,9 +24,6 @@ public class Exercicio01 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		Boolean notaMinimaParaPassar = true;
-		Boolean notaMenorQue60 = true;
-		
 		System.out.printf("Informe a nota de português: ");
 		Integer notaPortugues = scanner.nextInt();
 		
