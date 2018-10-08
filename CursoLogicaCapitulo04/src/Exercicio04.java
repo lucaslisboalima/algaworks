@@ -26,7 +26,7 @@ public class Exercicio04 {
 		System.out.printf("Informe o tempo de contribuição: ");
 		Integer tempoContribuicao = scanner.nextInt();
 
-		Boolean podeAposentar = idade > IDADE_MINIMA_PARA_APOSENTAR && tempoContribuicao >= 25;
+		Boolean podeAposentar = idade > IDADE_MINIMA_PARA_APOSENTAR && tempoContribuicao >= TEMPO_MINIMO_DE_CONTRIBUICAO;
 
 		if (podeAposentar) {
 			System.out.println("Sim! Ele(a) pode se aposentar.");
