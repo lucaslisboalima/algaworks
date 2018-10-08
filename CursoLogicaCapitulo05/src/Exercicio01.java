@@ -17,34 +17,28 @@ public class Exercicio01 {
 	 * 
 	 */
 	
-	static final Integer NOTA_MINIMA_PARA_PASSAR = 150;
-	static final Integer NOTA_CORTE = 60;
+	static final Double NOTA_MINIMA_PARA_PASSAR = 150.0;
+	static final Double NOTA_CORTE = 60.0;
 	
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.printf("Informe a nota de português: ");
-		Integer notaPortugues = scanner.nextInt();
+		Double notaPortugues = scanner.nextDouble();
 		
 		System.out.printf("Informe a nota de matemática: ");
-		Integer notaMatematica = scanner.nextInt();
+		Double notaMatematica = scanner.nextDouble();
 		
 		Boolean validarNota = notaPortugues < NOTA_CORTE || notaMatematica < NOTA_CORTE;
 		
-		Integer totalDasNotas = notaPortugues + notaMatematica;
+		Double totalDasNotas = notaPortugues + notaMatematica;
 		
 		if(!validarNota && totalDasNotas >= NOTA_MINIMA_PARA_PASSAR){
-			System.out.println("Nota atingida português: " + notaPortugues);
-			System.out.println("Nota atingida matemática: " + notaMatematica);
-			System.out.println("Aprovado.");
+			System.out.println("Parabéns! Você Passou.");
 		}else{
-			System.out.println("Nota atingida português: " + notaPortugues);
-			System.out.println("Nota atingida matemática: " + notaMatematica);
-			System.out.println("Reprovado.");
+			System.out.println("Infelizemente, não foi dessa vez.");
 		}
-		
-		
 		
 		scanner.close();
 		
