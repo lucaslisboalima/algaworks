@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Exercicio02 {
 	
+	static final Double PORCENTAGEM = 0.80;
+	
 	public static void main(String[] args) {
 		
 		/*
@@ -22,25 +24,29 @@ public class Exercicio02 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.printf("Meta de faturamento anual da empresa para o nao que passou: ");
-		Double metaFaturamentoAnual = scanner.nextDouble();
+		Double meta = scanner.nextDouble();
 		
 		System.out.printf("Faturamento real da empresa no último ano: ");
-		Double faturamentoReal = scanner.nextDouble();
+		Double faturamento = scanner.nextDouble();
 		
 		System.out.printf("Média salarial do funcionário para o ano anterior: ");
 		Double mediaSalarial = scanner.nextDouble();
 		
-		Boolean metaAlcancada = faturamentoReal >= metaFaturamentoAnual;
-		Boolean metaNaoAtingida = faturamentoReal < metaFaturamentoAnual;
+		Double oitentaPorCentroDaMeta = (meta * 80) / 100;
 		
-		if(metaAlcancada){
-			mediaSalarial += mediaSalarial;
-			System.out.println(mediaSalarial);
-		}else if(metaNaoAtingida){
+		Boolean metaAlcancada = faturamento >= meta;
 			
-		}
+		Boolean faturouPeloMenosOitentaPorCentro = faturamento >= oitentaPorCentroDaMeta;
 		
-		//System.out.println(metaAlcancada);
+		if (metaAlcancada) {
+			System.out.println("Você vai ganhar um bônus de 100%! Ele, será de: " + mediaSalarial);
+		}else if(faturouPeloMenosOitentaPorCentro){
+			Double oitentaPorCentoMediaSalarial = (mediaSalarial * 80) /100;
+			
+			System.out.println("Você vai ganhar um bônus de 80%! Ele, será de: " + oitentaPorCentoMediaSalarial);
+		}else{
+			System.out.println("Infelizemente, esse ano não tem bônus.");
+		}
 		
 		
 		scanner.close();
