@@ -36,7 +36,7 @@ public class Exercicio01 {
 			System.out.println("O resultado da divisão é: " + resultado);
 			
 		}else{
-			//System.out.println("Operador inválido.");
+			System.out.println("Operador inválido.");
 		}
 	
 		
