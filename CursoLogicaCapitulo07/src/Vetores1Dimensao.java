@@ -6,7 +6,7 @@ public class Vetores1Dimensao {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		/*
+		
 		String[] cardapio = new String[]{"Calabresa", "Atum", "Queijo", "Presunto"};
 		
 		System.out.println("Escolha o sabor:");
@@ -15,19 +15,33 @@ public class Vetores1Dimensao {
 			System.out.println("[" + i + "]" + cardapio[i]);
 		}
 		
-		System.out.printf("Digite o número referente ao sabor: ");
+		System.out.printf("Digite o nÃºmero referente ao sabor: ");
 		Integer saborEscolhido = scanner.nextInt();
 		
-		System.out.println("Você escolheu o sabor: " + cardapio[saborEscolhido]);
+		System.out.println("VocÃª escolheu o sabor: " + cardapio[saborEscolhido]);
 		
-		*/
+		
 		 
+		/*
 		String[] cardapio = new String[]{"Calabresa", "Atum", "Queijo", "Presunto"};
-		cardapio[3] = "Frango"; //Alterando a posição do vetor
+		cardapio[3] = "Frango"; //Alterando a posiÃ§Ã£o do vetor
 		
 		for(int i = 0; i < cardapio.length; i++){
 			System.out.println(cardapio[i]);
 		}
+		*/
+		
+		/*
+		String[] cardapio = new String[4];
+		cardapio[0] = "Calabresa";
+		cardapio[1] = "Atum";
+		cardapio[2] = "Queijo";
+		cardapio[3] = "Presunto";
+		
+		for(int i = 0; i < cardapio.length; i++){
+			System.out.println(cardapio[i]);
+		}
+		*/
 		
 		scanner.close();
 	}
