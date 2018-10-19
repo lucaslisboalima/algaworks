@@ -8,13 +8,13 @@ public class Exercicio01 {
 		
 		System.out.println("Calculadora Simples");
 		
-		System.out.printf("Informe o primeiro n˙mero: ");
+		System.out.printf("Informe o primeiro n√∫mero: ");
 		Integer numero1 = scanner.nextInt();
 		
-		System.out.printf("[1] AdiÁ„o | [2] SubtraÁ„o | [3] MultiplicaÁ„o | [4] Divis„o: ");
+		System.out.printf("[1] Adi√ß√£o | [2] Subtra√ß√£o | [3] Multiplica√ß√£o | [4] Divis√£o: ");
 		Integer operacao = scanner.nextInt();
 		
-		System.out.printf("Informe o segundo n˙mero: ");
+		System.out.printf("Informe o segundo n√∫mero: ");
 		Integer numero2 = scanner.nextInt();
 		
 		Integer resultado = 0;
@@ -25,18 +25,18 @@ public class Exercicio01 {
 			
 		}else if(operacao == 2){
 			resultado = numero1 - numero2;
-			System.out.println("O resultado da subtraÁ„o È: " + resultado);
+			System.out.println("O resultado da subtra√ß√£o √©: " + resultado);
 			
 		}else if(operacao == 3){
 			resultado = numero1 * numero2;
-			System.out.println("O resultado da multiplicaÁ„o È: " + resultado);
+			System.out.println("O resultado da multiplica√ß√£o √©: " + resultado);
 			
 		}else if(operacao == 4){
 			resultado = numero1 / numero2;
-			System.out.println("O resultado da divis„o È: " + resultado);
+			System.out.println("O resultado da divis√£o √©: " + resultado);
 			
 		}else{
-			System.out.println("Operador inv·lido.");
+			System.out.println("Operador inv√°lido.");
 		}
 	
 		
