@@ -5,9 +5,11 @@ public class VetoresMaisDe2Dimensoes {
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
-		
-		Double faturamentoDia = 1000.0;
-		
+				
+		/*Dica!
+			O valor de vetores que possuem mais de uma dimensão precisam ser vetores que tenham uma dimensão a menos
+		*/
+
 		//Vetores de 1 Dimensão
 		Double[] faturamentoJaneiro = new Double[] {1500.0, 2000.0, 1700.0};
 		Double[] faturamentoFevereiro = new Double[] {1000.0, 2500.0, 1800.0};
@@ -19,6 +21,15 @@ public class VetoresMaisDe2Dimensoes {
 		//System.out.println("Faturamento do dia 1 de Janeiro: " + faturamentoAnual[0][0]);
 		//System.out.println("Faturamento do dia 3 de Fevereiro: " + faturamentoAnual[1][2]);
 		
+		
+		//Vetor 3 dimensão se usa vetor de duas dimensão
+		Double[][][] faturamentoQuinquenal = new Double[][][]{ faturamentoAnual};
+		
+		//Vetor 3 dimensão se usa vetor de três dimensão
+		Double[][][][] faturamentoDecada = new Double[][][][]{ faturamentoQuinquenal};
+		
+		
+		/*
 		for(int i = 0; i < faturamentoAnual.length; i++){
 			System.out.println("Mês: " + (i + 1));
 			
@@ -28,7 +39,7 @@ public class VetoresMaisDe2Dimensoes {
 				Double dia = mes[y];
 				System.out.println("Dia " + (y + 1) + ": " + dia);
 			}
-		}
+		}*/
 		
 		scanner.close();
 		
