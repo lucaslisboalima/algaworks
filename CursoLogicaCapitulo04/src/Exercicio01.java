@@ -6,7 +6,7 @@ public class Exercicio01 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Calculadora Simples");
+		//System.out.println("Calculadora Simples");
 		
 		System.out.printf("Informe o primeiro número: ");
 		Integer numero1 = scanner.nextInt();
