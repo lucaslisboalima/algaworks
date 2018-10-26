@@ -11,7 +11,7 @@ public class Exercicio03 {
 		System.out.print("Informe o valor da conta de luz: ");
 		totalGastos += scanner.nextDouble();
 		
-		System.out.printf("Informe o valor da conta de ·gua: ");
+		System.out.printf("Informe o valor da conta de √°gua: ");
 		totalGastos += scanner.nextDouble();
 		
 		System.out.printf("Informe o valor da conta de telefone: ");
@@ -20,13 +20,13 @@ public class Exercicio03 {
 		System.out.printf("Informe o valor do boleto da escola do filho: ");
 		totalGastos += scanner.nextDouble();
 		
-		System.out.printf("Informe o valor da fatura do cart„o: ");
+		System.out.printf("Informe o valor da fatura do cart√£o: ");
 		totalGastos += scanner.nextDouble();
 		
 		System.out.printf("Informe o valor gasto com o supermercado: ");
 		totalGastos += scanner.nextDouble();
 		
-		System.out.println("O total de gastos È R$" + totalGastos);
+		System.out.println("O total de gastos √© R$" + totalGastos);
 		
 		scanner.close();
 		

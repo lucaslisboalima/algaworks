@@ -6,12 +6,12 @@ public class Exercicio01 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.printf("Informe um número: ");
+		System.out.printf("Informe um nÃºmero: ");
 		Integer numero =  scanner.nextInt();
 		
 		Integer quadrado = numero * numero;
 		
-		System.out.println("O quadrado do número " + numero + " é " + quadrado + ".");
+		System.out.println("O quadrado do nÃºmero " + numero + " Ã© " + quadrado + ".");
 		
 		scanner.close();
 		

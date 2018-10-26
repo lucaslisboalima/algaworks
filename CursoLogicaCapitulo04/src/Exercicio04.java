@@ -4,10 +4,10 @@ public class Exercicio04 {
 
 	/*
 	 * Crie um programa que receba a idade de uma pessoa e a quantidade de tempo
-	 * que essa pessoa contribuiu com a previdÍncia, depois verifique se ela
-	 * pode aposentar ou n„o. Nas regras desse programa a pessoa vai precisar
-	 * ter, pelo menos, 55 anos e ter contribuÌdo com, pelo menos, 25 anos. Se
-	 * ela passar nessas duas condiÁıes, ent„o mostre pra ela uma mensagem
+	 * que essa pessoa contribuiu com a previd√™ncia, depois verifique se ela
+	 * pode aposentar ou n√£o. Nas regras desse programa a pessoa vai precisar
+	 * ter, pelo menos, 55 anos e ter contribuido com, pelo menos, 25 anos. Se
+	 * ela passar nessas duas condi√ß√µes, ent√£o mostre pra ela uma mensagem
 	 * dizendo que ela pode aposentar.
 	 * 
 	 */
@@ -23,7 +23,7 @@ public class Exercicio04 {
 		System.out.printf("Informe a idade: ");
 		Integer idade = scanner.nextInt();
 
-		System.out.printf("Informe o tempo de contribuiÁ„o: ");
+		System.out.printf("Informe o tempo de contribui√ß√£o: ");
 		Integer tempoContribuicao = scanner.nextInt();
 
 		Boolean podeAposentar = idade > IDADE_MINIMA_PARA_APOSENTAR && tempoContribuicao >= TEMPO_MINIMO_DE_CONTRIBUICAO;
@@ -31,7 +31,7 @@ public class Exercicio04 {
 		if (podeAposentar) {
 			System.out.println("Sim! Ele(a) pode se aposentar.");
 		} else {
-			System.out.println("N„o! Ele(a) n„o pode se aposentar.");
+			System.out.println("N√£o! Ele(a) n√£o pode se aposentar.");
 		}
 
 		scanner.close();

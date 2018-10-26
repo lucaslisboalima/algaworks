@@ -4,9 +4,9 @@ public class Exercicio02 {
 	
 	/*
 	 * Crie um programa que receba o valor de um produto e exiba o valor final da compra. 
-	 * Esse valor final será o valor do produto mais o valor do frete - use o valor do frete como R$15,00. 
+	 * Esse valor final serÃ¡ o valor do produto mais o valor do frete - use o valor do frete como R$15,00. 
 	 * Uma compra de, por exemplo, R$80,00, teria um valor final de R$95,00.
-	 * Agora, caso a compra seja maior ou igual a R$100,00, então não cobre o frete.
+	 * Agora, caso a compra seja maior ou igual a R$100,00, entÃ£o nÃ£o cobre o frete.
 	 * 
 	 */
 	
@@ -25,10 +25,10 @@ public class Exercicio02 {
 		
 		if(valorProduto >= VALOR_DE_COMPRA_MINIMA){
 			totalCompra = valorProduto;
-			System.out.println("Valor total da compra é: " + totalCompra);
+			System.out.println("Valor total da compra Ã©: " + totalCompra);
 		}else{
 			totalCompra = valorProduto + VALOR_FRETE;
-			System.out.println("Valor da compra com frete incluso de R$" + VALOR_FRETE + " é R$" + totalCompra);
+			System.out.println("Valor da compra com frete incluso de R$" + VALOR_FRETE + " Ã© R$" + totalCompra);
 		}
 		
 		/*
