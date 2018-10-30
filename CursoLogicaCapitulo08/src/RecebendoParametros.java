@@ -1,4 +1,3 @@
-import java.awt.Cursor;
 import java.util.Scanner;
 
 public class RecebendoParametros {
@@ -13,9 +12,7 @@ public class RecebendoParametros {
 		
 		System.out.println("Escolha dentre os cursos abaixo");
 		
-		for(int i = 0; i < cursos.length; i++){
-			System.out.println("[" + i + "]" + cursos[i]);
-		}
+		iterarEExibirPosicoesDoVetorString(cursos);
 		
 		System.out.print("O curso que você deseja é o: ");
 		Integer posicaoCursoEscolhido = scanner.nextInt();
@@ -26,13 +23,13 @@ public class RecebendoParametros {
 			encerrarProgramaPorCausaDePosicaoInvalida();
 		}
 		
+		
+		
 		String[] formasPagamento = new String[]{"Boleto", "Cartão de Crédito"};
 		
 		System.out.println("Escolha dentre as formas de pagamento: ");
 		
-		for(int i = 0; i < formasPagamento.length; i++){
-			System.out.println("[" + i + "]" + formasPagamento[i]);
-		}
+		iterarEExibirPosicoesDoVetorString(formasPagamento);
 		
 		System.out.print("Sua forma de pagamento escolhida é: ");
 		Integer posicaoFormaPagamentoEscolhida = scanner.nextInt();
